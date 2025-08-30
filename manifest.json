@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "AWS SSO Auto-Close",
+  "version": "1.0.0",
+  "description": "Closes AWS SSO login callback tabs after redirect.",
+  "host_permissions": [
+    "https://*.awsapps.com/start/*",
+    "http://127.0.0.1/oauth/callback*"
+  ],
+  "background": { "service_worker": "service-worker.js" }
+}
